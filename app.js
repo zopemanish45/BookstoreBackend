@@ -16,7 +16,7 @@ app.use(express.json());
 app.use('/books', routes);
 
 
-mongoose.connect('mongodb://localhost:27017/bookData')
+mongoose.connect('mongodb+srv://manishzope412:Ee7M2IJEnPcDT3Hm@cluster0.svzb7cl.mongodb.net/bookData?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => {
         console.log('Database connected...')
     }).then(() => {
